@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  color: hsl(0, 0%, 100%);
+  margin: auto;
+  width: 620px;
+  max-width: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgb(204, 204, 204);
+}
+
+.section-a {
+  grid-column: 1/3;
+  background-color: hsl(0, 0%, 100%);
+  padding: 35px;
+}
+
+.section-a h2 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 25px;
+}
+
+.section-a h4 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 15px;
+}
+
+.section-a p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.6rem;
+}
+
+.section-b {
+  background-color: hsl(179, 62%, 43%);
+  padding: 35px;
+}
+
+.section-b h3, .section-c h3 {
+  margin-bottom: 20px;
+}
+
+.section-b .subscription {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section-b .subscription span {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.section-b button {
+  width: 100%;
+  font-family: inherit;
+  padding: 15px;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  background-color: hsl(71, 73%, 54%);
+  border: 0;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.section-c {
+  background-color: hsl(179, 47%, 52%);
+  padding: 40px;
+  
+}
+.section-c p {
+  font-size: 14px;
+  line-height: 1.3rem;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  color: hsl(0, 0, 0)
+}
+
+.attribution a {
+  color: hsl(228, 62%, 45%);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  main {
+    margin: 80px;
+    grid-template-columns: 1fr;
+    overflow: auto;
+
+  }
+
+  .section-c {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .section-a, .section-b, .section-c {
+    font-size: 14px;
+    padding-left: 25px; 
+    padding-right: 25px;
+  }
+}
